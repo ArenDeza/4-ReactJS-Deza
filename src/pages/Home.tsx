@@ -22,6 +22,7 @@ function Home() {
   return (
     <>
       <Header />
+      
       <Row>
 
         <Col md="6" xl="4">
@@ -66,7 +67,7 @@ function Home() {
 
       <Row>
         <div className="footer-ish">
-        <p>Created by Aren Deza</p>
+        <p>Created by Aren Deza - made with typescript and react bootstrap</p>
         </div>
         
       </Row>

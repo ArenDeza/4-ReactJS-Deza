@@ -12,7 +12,7 @@ export default function Header() {
       <Navbar bg="primary" data-bs-theme="dark" expand="lg" className="bg-body-tertiary">
         <Container>
 
-          <Navbar.Brand href="#home">DIGITAL TRANSFORMATION</Navbar.Brand>
+          <Navbar.Brand href="#home" className="brand-title">DIGITAL TRANSFORMATION</Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
