@@ -2,27 +2,13 @@
 import { Row, Col, Card } from "react-bootstrap";
 import Header from "../components/Header";
 
-/*
- * TODO
- * - research how to hide navbar elements at certain screen sizes
- * - hobbies page with collapsing text boxes
- * - styling and functionality of calculator
- * - remember to have fun
- * - learn how to output the JSON
- */
-
 function Home() {
-  /*
-  const [text, setText] = useState("vafdsvfbvsdf");
-  const displayMessage = () => {
-    setText("hello world");
-  };
-  */
+
 
   return (
     <>
       <Header />
-      
+
       <Row>
 
         <Col md="6" xl="4">
