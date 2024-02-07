@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Hobbies from "./pages/Hobbies";
 import JSON from "./pages/JSON";
 import Calculator from "./pages/Calculator";
+import Unknown from "./pages/Unknown";
 import NoPage from "./pages/NoPage";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/hobbies" element={<Hobbies />} />
             <Route path="/calculator" element={<Calculator/>} />
             <Route path="/json" element={<JSON />} />
+            <Route path="/unknown" element={<Unknown />} />
 
             {/* Above page is displayed if Error 404 */}
             <Route path="*" element={<NoPage />} />

@@ -209,3 +209,9 @@ margin-right: 60px;
 .user-information-h {
   margin-bottom: 20px;
 }
+
+.iframe-window {
+  height: 624; 
+  width: 816;
+  float: middle;
+}
