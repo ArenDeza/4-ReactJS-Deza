@@ -89,6 +89,10 @@ margin-right: 60px;
   margin-top: 20px;
   padding: 20px;
   height: max-content;
+
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }
 .homepage-btn {
   width: 100%;
@@ -177,4 +181,31 @@ margin-right: 60px;
 }
 .align-r{
   text-align: right;
+}
+
+/* json page */
+.user-col {
+  padding: 5px;
+  margin: 0px;
+  font-size: smaller;
+  
+}
+.user-card {
+  text-align: left;  
+  height: 300px;
+  overflow-y: auto;
+}
+.user-card {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  height: 100%
+}
+.user-card p{
+  margin: 0px;
+}
+.user-card .user-address{
+  margin-top: 10px
+}
+.user-information-h {
+  margin-bottom: 20px;
 }

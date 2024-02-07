@@ -1,43 +1,42 @@
 import Header from "../components/Header";
-import { Row, Col, Card } from "react-bootstrap";
-import React, { useEffect, useState } from "react";
-import users from "https://jsonplaceholder.typicode.com/users";
+import User from "../components/User";
+import { Row } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import Axios from "axios"
 
 export default function JSON() {
+    const [users, setUsers] = useState([]);
+    
+    // interface for determination of types
+    interface User {
+        name: string;
+        username: string;
+        email: string;
+        address: {
+            street: string;
+            suite: string;
+            city: string;
+            zipcode: string;
+        };
+    }
+
+    // fetching data from API
+    useEffect(() => {
+        const userApi = "https://jsonplaceholder.typicode.com/users"
+        Axios.get(userApi).then((res) => {
+            setUsers(res.data);
+        })
+    },[])
+
     return (
         <>
-        <h1>User Information</h1>
+        <Header/>
+        <h1 className="user-information-h"> . . . USER INFORMATION . . .</h1>
+        <Row>
+        {users.length > 0 ? users.map((user:User) => <User 
+        user={user}/>) : ('Loading ...')}
+        </Row>
+        
         </>
     )
 }
-
-/*
-export default function JSON() {
-
-    return (
-       <>
-       <h1>User Information</h1>
-
-       {
-        users && users.map( user: any => {
-            return(
-                <Col key={ user.id }>
-                { user.name }
-                
-                { user.address && user.address.map( local => {
-                    return(
-                        <div key={ user.id } >
-                            {local.street}
-                        </div>
-                        
-                    )
-                }) }
-                </Col>
-            )
-        }) 
-       }
-       </>
-    )
-}
-*/
-

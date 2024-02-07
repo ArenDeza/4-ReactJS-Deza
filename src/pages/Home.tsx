@@ -49,6 +49,33 @@ function Home() {
             </a>
           </Card>
         </Col>
+
+        <Col md="6" xl="4">
+          <Card className="homepage-card">
+            <h3>HOBBIES</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
+              consectetur.
+            </p>
+            <a href="./hobbies" className="btn btn-primary homepage-btn">
+              See Hobbies
+            </a>
+          </Card>
+        </Col>
+
+        <Col md="6" xl="4">
+          <Card className="homepage-card">
+            <h3>MALWARE</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
+              consectetur.
+            </p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="btn btn-primary homepage-btn">
+              Compromise Security
+            </a>
+          </Card>
+        </Col>
+        
       </Row>
 
       <Row>
