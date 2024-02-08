@@ -57,7 +57,7 @@ function Home() {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
               consectetur.
             </p>
-            <a href="./hobbies" className="btn btn-primary homepage-btn">
+            <a href="./unknown" className="btn btn-primary homepage-btn">
               Open ???
             </a>
           </Card>

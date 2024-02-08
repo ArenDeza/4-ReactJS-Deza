@@ -33,6 +33,7 @@ export default function JSON() {
         <Header/>
         <h1 className="user-information-h"> . . . USER INFORMATION . . .</h1>
         <Row>
+            {/* posts a column for each entry in the json */}
         {users.length > 0 ? users.map((user:User) => <User 
         user={user}/>) : ('Loading ...')}
         </Row>
